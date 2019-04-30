@@ -1,0 +1,100 @@
+@font-face { font-family:'NG'; src:url('font/NanumGothic.woff') format('woff');}
+@font-face { font-family:'NGB'; src:url('font/NanumGothicBold.woff') format('woff');}
+@font-face { font-family:'NGEB'; src:url('font/NanumGothicExtraBold.woff') format('woff');}
+
+a:link {text-decoration: none; color:#000000;}
+a:visited {text-decoration: none; color:#000000;}
+a:active {text-decoration: none; color:#000000;}
+a:hover {text-decoration: none; color:#000000;}
+
+li {
+	display: inline;
+}
+
+.row {
+	display: table;
+}
+
+.col {
+	display: table-cell;
+	width: 20%;
+}
+
+#topMenu{
+	width: inherit;
+	height: 30px;
+}
+#topMenu ul li{
+	list-style: none;
+	color: black;
+	background-color: gray;
+	float: left;
+	text-align: center;
+	line-height: 30px;  
+	vertical-align: middle; 
+}
+#topMenu .menuLink{
+	text-decoration: none;
+	color:black;
+	display: block;
+	width:150px;
+	font-size:15px;
+	font-weight: normal;
+	font-family: 'NG';
+	margin-right:50px;
+	margin-left: 50px;
+	
+}
+#topMenu .menuLink:hover{
+	color: #ffca00;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 20%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+.loginMenu{
+	float:right;
+}
+
+
+
+
+
+
+
+
+
+
+                
+                

@@ -5,21 +5,21 @@
 	String contentPage = request.getParameter("CONTENTPAGE");
 %>
 <body>
-
-<table width="800" border="1" cellpadding="2" cellspacing="0">
+<center>
+<table cellpadding="2" cellspacing="0">
 	<tr>
 		<td>
 			<jsp:include page="top.jsp" flush="false"/>
 		</td>	
 	</tr>
 	
-	<tr>
-		<td width="200" valign="top">
+<%-- 	<tr>
+		<td>
 			<jsp:include page="menu.jsp" flush="false"/>
 		</td>	
-	</tr>
+	</tr> --%>
 	<tr>
-		<td  width="600" valign="top">
+		<td>
 			<jsp:include page="<%=contentPage%>" flush="false"/>
 		</td>		
 	</tr>	
@@ -33,7 +33,7 @@
 	
 	</table>
 
-
+</center>
 
 
 
