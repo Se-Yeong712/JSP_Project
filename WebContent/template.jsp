@@ -13,11 +13,11 @@
 		</td>	
 	</tr>
 	
-<%-- 	<tr>
+ 	<tr>
 		<td>
 			<jsp:include page="menu.jsp" flush="false"/>
 		</td>	
-	</tr> --%>
+	</tr> 
 	<tr>
 		<td>
 			<jsp:include page="<%=contentPage%>" flush="false"/>
