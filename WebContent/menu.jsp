@@ -5,17 +5,14 @@
 <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
-	<div align="center">
-		<img src="img/imgLogo.jpg">
-	</div>
+
 	
 	<nav>
 		<ul>
-			<li><a href="#">어은돌꿈꾸는바다</a></li>
-			<li><a href="#">이용안내</a></li>
-			<li><a href="#">예약하기</a></li>
-			<li><a href="#">커뮤니티</a></li>
-			<li><a href="#">관광안내</a></li>
+			<li><a href="#">메뉴1</a></li>
+			<li><a href="#">메뉴2</a></li>
+			<li><a href="#">메뉴3</a></li>
+			<li><a href="#">메뉴4</a></li>
 		
 		</ul>
 	
