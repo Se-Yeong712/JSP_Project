@@ -4,10 +4,12 @@
 <head>
 
 <link rel="stylesheet" href="css/top.css">
+
 </head>
 <body>
+<center>
 	<h1>title</h1>
-
+</center>
 
 </body>
 </html>

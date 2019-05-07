@@ -6,7 +6,7 @@
 %>
 <body>
 <center>
-<table cellpadding="2" cellspacing="0">
+<table border=1 style="width:100%;">
 	<tr>
 		<td>
 			<jsp:include page="top.jsp" flush="false"/>
