@@ -5,8 +5,8 @@ a:hover {text-decoration: none; color:#000000;}
 
 
 body {
-	/* color: #FFF0A5;
-    background-color: #468966; */
+	color: #FFF0A5;
+    background-color: #006792;
 }
 
 .overlay {
@@ -16,8 +16,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  /* background-color:#FFF0A5; */
- background-color: 83af9b;
+  background-color:#ffb549;
   overflow: hidden;
   transition: 0.5s;
 }
@@ -35,7 +34,7 @@ body {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: ;
+  color: black;
   display: inline-block;
   transition: 0.3s;
   width: 20%;

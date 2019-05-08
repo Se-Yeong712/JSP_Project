@@ -7,7 +7,16 @@
 <title>Insert title here</title>
 </head>
 <body>
+<center>
 [홈페이지 방문을 환영합니다]
-
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+[홈페이지 방문을 환영합니다]
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+[홈페이지 방문을 환영합니다]
+</center>
 </body>
 </html>

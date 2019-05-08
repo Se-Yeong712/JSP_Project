@@ -8,8 +8,7 @@
 </head>
 <body>
 <center>
-	<h1>title</h1>
+	<font style="font-size: 50px; font-weight: bold;">TITLE</font>
 </center>
-
 </body>
 </html>

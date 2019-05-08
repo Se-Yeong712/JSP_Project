@@ -6,29 +6,29 @@
 <link rel="stylesheet" href="css/menu.css">
 
 <script>
-function openNav() {
-	  document.getElementById("myNav").style.height = "100%";
+	function openNav() {
+		document.getElementById("myNav").style.height = "100%";
 	}
 
 	function closeNav() {
-	  document.getElementById("myNav").style.height = "0%";
+		document.getElementById("myNav").style.height = "0%";
 	}
 </script>
 </head>
 <body>
-		<div id="myNav" class="overlay">
-			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			<div class="overlay-content">
-					<a href="#">메뉴1</a>
-					<a href="#">메뉴2</a>
-					<a href="mandalArt.jsp">메뉴3</a>
-					<a href="#">메뉴4</a>
-				
-			</div>
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="instagram.jsp">MENU1</a> 
+			<a href="mandalArt.jsp">MENU2</a> 
+			<a href="random.jsp">MENU3</a>
+			<a href="worldCup.jsp">MENU4</a>
+
 		</div>
-		<center>
-		<span style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776;</span>
-		</center>
+	</div>
+	<center>
+		<span style="font-size: 50px; cursor: pointer" onclick="openNav()">&#9776;</span>
+	</center>
 </body>
 </html>
 

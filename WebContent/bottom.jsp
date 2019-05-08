@@ -2,10 +2,14 @@
     pageEncoding="UTF-8"%>
 <html>
     <head>
-    
+   	<style>
+   	body{
+   	float: inherit;
+   	}
+   	</style>
     </head>
     <body>
-   바닥글
+    Copyright&copy; 2019. 이세영. All rights reserved.
    	</body>
 </html>
     
