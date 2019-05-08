@@ -21,14 +21,14 @@ function openNav() {
 			<div class="overlay-content">
 					<a href="#">메뉴1</a>
 					<a href="#">메뉴2</a>
-					<a href="#">메뉴3</a>
+					<a href="mandalArt.jsp">메뉴3</a>
 					<a href="#">메뉴4</a>
 				
 			</div>
 		</div>
-
-		<span style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776;
-			open</span>
+		<center>
+		<span style="font-size: 30px; cursor: pointer" onclick="openNav()">&#9776;</span>
+		</center>
 </body>
 </html>
 

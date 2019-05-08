@@ -4,10 +4,9 @@ a:active {text-decoration: none; color:#000000;}
 a:hover {text-decoration: none; color:#000000;}
 
 
-li{
-	display: inline-block;
-	color:blue;
-	background-color: yellow;
+body {
+	/* color: #FFF0A5;
+    background-color: #468966; */
 }
 
 .overlay {
@@ -17,7 +16,8 @@ li{
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: 83af9b;
+  /* background-color:#FFF0A5; */
+ background-color: 83af9b;
   overflow: hidden;
   transition: 0.5s;
 }
@@ -27,22 +27,23 @@ li{
   top: 25%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 60px;
+  align-items: center;
 }
 
 .overlay a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #818181;
+  color: ;
   display: inline-block;
   transition: 0.3s;
-  margin: 100px;
+  width: 20%;
+  font-size: 50px;
 }
 
 .overlay a:hover, .overlay a:focus {
   color: white;
-  background-color: c8c8a9;
 }
 
 .overlay .closebtn {
@@ -50,7 +51,7 @@ li{
   top: 20px;
   right: 45px;
   font-size: 60px;
-  
+  text-align: right;
 }
 
 @media screen and (max-height: 450px) {
