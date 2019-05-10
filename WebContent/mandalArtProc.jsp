@@ -27,19 +27,19 @@ String country[][]={{"규동","우동","미소시루","가츠동","일본","오�
 <body>
 mandalArtProc.jsp
 <table border="1">
-<%
-	for(int i=0;i<foods.length;i++){%>
+<%-- <%
+	for(int i=0;i<foods.length;i++){%> --%>
 <tr>
 <%
 	for(int j=0;j<foods.length;j++){%>
 
-<td><%=foods[i][j] %></td>
+<td><%=foods[0][j] %></td>
 
 <%}%>
 	
 	<tr>
-<%}
-%>
+<%-- <%}
+%> --%>
 
 
 <tr>
