@@ -21,10 +21,10 @@
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<a href="main.jsp" class="main">&Eta;</a>
 		<div class="overlay-content">
-			<a href="instagram.jsp">MENU1</a> 
-			<a href="mandalArt.jsp">MENU2</a> 
-			<a href="random.jsp">MENU3</a>
-			<a href="worldCup.jsp">MENU4</a>
+			<a href="instagram.jsp">SEARCH1</a> 
+			<a href="mandalArt.jsp">SEARCH2</a> 
+			<a href="worldCup.jsp">SELECT1</a>
+			<a href="random.jsp">SELECT2</a>
 		</div>
 	</div>
 	<center>

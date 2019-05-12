@@ -4,10 +4,10 @@
 	request.setCharacterEncoding("UTF-8");
 	String contentPage = request.getParameter("CONTENTPAGE");
 %>
-<style>
+<!-- <style>
 @font-face { font-family:'NG'; src:url('font/NanumGothic.woff') format('woff');}
-</style>
-<body style="margin:auto; font-family: 'NG'; height:100%;">
+</style> -->
+<body style="margin:auto; height:100%;">
 			<table border=1 style="width: 100%;  align:center">
 				<tr>
 					<td height="80px"><jsp:include page="top.jsp" flush="false" /></td>

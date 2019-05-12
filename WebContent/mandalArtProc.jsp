@@ -27,36 +27,63 @@ String country[][]={{"규동","우동","미소시루","해물파전","김치","�
 <html>
 <head>
 <link rel="stylesheet" href="css/mandalArt.css">
+ <script>
+  function tableColor() {
+          document.getElementById("color").style.backgroundColor = "green"
+      }
+ </script>
 
 </head>
 <body>
-mandalArtProc.jsp margin width
+mandalArtProc.jsp 
 
 <!-- <form>
 <input type="button" value="종류별" onclick='kind()'>
 <input type="button" value="종류별" onclick='country()'>
 </form> -->
 
-<table border="1" style="width:800px;height:800px;margin:auto;text-align:center; border-collapse:collapse;">
+<table border=1 style="border:2px solid black;width:800px;height:800px;margin:auto;text-align:center; border-collapse:collapse;">
 <colgroup>
-<col span=9 width="9%"/>
+<col width="9%"/>
+<col width="9%"/>
+<col width="9%" style="border-right:2px solid black;"/>
+<col width="9%"/>
+<col width="9%"/>
+<col width="9%" style="border-right:2px solid black;"/>
+<col width="9%"/>
+<col width="9%"/>
+<col width="9%"/>
+
 </colgroup>
 <%
-	for(int i=0;i<country.length;i++){%>
-<tr height="40px">
-<%
-	for(int j=0;j<country.length;j++){%>
-
-<td style="padding-top:0px;"><button class="button"><%=kinds[i][j] %></button></td>
+	int check=0;
+	for(int i=0;i<country.length;i++){
+	if(i==2 || i==5){%>
+		<tr height="40px" style="border-bottom:2px solid black;">
+	<%}
+	else{%>
+		<tr height="40px">
+	<%}
+	for(int j=0;j<country.length;j++){
+	if(i>2 && i<6 && j>2 && j<6){%>
+		<td id="color" style="padding-top:0px; background-color:white;"><button class="button" onClick="tableColor();"><%=kinds[i][j] %></button></td>
+		<%}
+	else{%>
+		<td style="padding-top:0px;"><button class="button"><%=kinds[i][j] %></button></td>
+<%}%>
 
 <%}%>
 	
 </tr>
 <%}%> 
-
-
-
 </table>
+
+<%!
+void chk(){
+	
+} %>
+
+%>
 
 
 </body>

@@ -10,7 +10,24 @@ body {
     
 }
 
+table{
+	 border:1px solid black;
+	 width:800px;
+	 height:800px;
+	 margin:auto;
+	 text-align:center; 
+	 border-collapse:collapse;
+}
+
 .button{
 	background-color: transparent;
 	border:none;
+}
+
+.tr{
+	
+}
+
+col.colgr{
+	border-right:2px solid black;
 }
