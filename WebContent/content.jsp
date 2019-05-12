@@ -5,6 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+body{
+ background-color: #0087cb;
+ color: #fff0a5;
+ }
+</style>
 </head>
 <body>
 <center>

@@ -4,12 +4,6 @@ a:active {text-decoration: none; color:#000000;}
 a:hover {text-decoration: none; color:#000000;}
 
 
-body {
-	color: #FFF0A5;
-    background-color: #adbd37;
-    
-}
-
 .overlay {
   height: 0%;
   width: 100%;
@@ -52,6 +46,15 @@ body {
   right: 45px;
   font-size: 60px;
   text-align: right;
+}
+
+.overlay .main {
+  position: absolute;
+
+  top: 20px;
+  left:20px;
+  font-size: 40px;
+  text-align: left;
 }
 
 @media screen and (max-height: 450px) {
