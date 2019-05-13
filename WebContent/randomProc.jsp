@@ -8,43 +8,64 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="css/random.css">
 <script type="text/javascript">
-	var ran=Math.floor(Math.random()*9);
+function myRandom(){
+	var i=Math.floor(Math.random()*3);
+	var j=Math.floor(Math.random()*3);
+ 	var div=document.getElementById("ran"); 
 
-function doFunction(){
-	alert(ran);
+	var x=0;
+	var y=2;
+	var Timer1 = setInterval(function(){	
+		document.getElementById("myTable").rows[x].cells[x].style.backgroundColor="#FFF0A5";
+		document.getElementById("myTable").rows[x++].cells[y--].style.backgroundColor="#FFF0A5";
+	/* 	div.innerHTML="x:" + x + " y:" + y + " i:" + i+ " j:"+j; */
+		if(x==3){
+			setTimeout(function() {
+				document.getElementById("myTable").rows[0].cells[1].style.backgroundColor="#FFF0A5";
+				document.getElementById("myTable").rows[1].cells[0].style.backgroundColor="#FFF0A5";
+				document.getElementById("myTable").rows[1].cells[2].style.backgroundColor="#FFF0A5";
+				document.getElementById("myTable").rows[2].cells[1].style.backgroundColor="#FFF0A5";
+				
+				setTimeout(function() {
+					for(var x=0;x<3;x++){
+						for(var y=0;y<3;y++){
+							document.getElementById("myTable").rows[x].cells[y].style.backgroundColor="";
+						}	
+					} 
+					document.getElementById("myTable").rows[i].cells[j].style.backgroundColor="#FFF0A5";
+					}, 500);
+				}, 500);
+
+			clearInterval(Timer1);
+		}
+	}, 500);
+	
+
+	
 }
 
-function HighlightRow(obj){
 
-	var table = document.getElementId("tableId");
-	var tr = table.getElementsByTagName("tr");
-	for(var i=0; i<tr.length; i++){
-		tr[i].style.background = "white";
-	}
-	obj.style.backgroundColor = "#FCE6E0";
 
-}
 </script>
 </head>
 <body>
-randomProc.jsp a
-<table id="tableId" border="1" style="margin:auto;border:1px solid black;text-align:center;width:300px;height:300px;border-collapse:collapse;">
+randomProc.jsp
+<table id="myTable" class="table">
 <colgroup>
 	<col span=3 width="100px">
 </colgroup>
-
 	<%
 	for(int i=0;i<3;i++){%>
 		<tr><%
 		for(int j=0;j<3;j++){%>
-			<td onclick="javascript:HighlightRow(this);"><input type="text" style="width:100px; height: 100px; text-align:center;">tdtdtd</td>
+			<td class="td"><input type="text" class="tdInput"></td>
 		<%}%>
 		</tr>
 	<%}	%>
 </table>
-<input id="clickMe" type="button" value="clickme" onclick="doFunction();" />
-
-
-
+<!-- <div id="ran"></div> -->
+<center>
+<button class="btn" onclick="myRandom();">RANDOM</button>
+</center>
 </body>
 </html>

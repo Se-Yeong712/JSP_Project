@@ -6,7 +6,7 @@ a:hover {text-decoration: none; color:#000000;}
 
 body {
 	color: #FFF0A5;
-    background-color: #ff585d;
+    background-color: #F38181;
     
 }
 
@@ -20,6 +20,7 @@ table{
 }
 
 .button{
+	margin:auto;
 	background-color: transparent;
 	border:none;
 }

@@ -27,10 +27,84 @@ String country[][]={{"규동","우동","미소시루","해물파전","김치","�
 <html>
 <head>
 <link rel="stylesheet" href="css/mandalArt.css">
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
  <script>
-  function tableColor() {
-          document.getElementById("color").style.backgroundColor = "green"
-      }
+ 
+ 	$(document).ready(function(){
+ 		$('.button').on('click',(e) => {
+ 			console.log(e.target.value);
+ 			 var div=document.getElementById("food"); 
+ 			 div.innerHTML=e.target.value+" ";
+ 			 var food=e.target.value;
+ 			 var foods = ['찌개','특식','밑반찬','덮/볶음밥','간식','국','야식/술안주','면'];
+ 			 for(var i=0;i<8;i++){
+ 				 if(food==foods[i]){
+ 					console.log(e.target.value+"확인");
+ 					tdsel(i);
+ 					
+ 				 }
+ 			 }
+ 			 
+ 		});
+ 	 
+
+ 	});
+
+ 	function tdsel(i){
+ 		switch (i) {
+		case 0:
+			tdcol(0,0);
+			break;
+		case 1:
+			tdcol(0,3);
+			break;
+		case 2:
+			tdcol(0,6);
+			break;
+		case 3:
+			tdcol(3,0);
+			break;
+		case 4:
+			tdcol(3,6);
+			break;
+		case 5:
+			tdcol(6,0);
+			break;
+		case 6:
+			tdcol(6,3);
+			break;
+		case 7:
+			tdcol(6,6);
+			break;
+
+		default:
+			console.log(i);
+			break;
+		}
+ 		
+ 		
+ 	}
+ 	function tdcol(x,y){
+ 		for(var i=0;i<9;i++){
+ 			for(var j=0;j<9;j++){
+ 				if(i>2 && i<6 && j>2 && j<6){
+ 					document.getElementById("tdcolor").rows[i].cells[j].style.backgroundColor="#FFF0A5";
+ 				}
+ 				else{
+ 					document.getElementById("tdcolor").rows[i].cells[j].style.backgroundColor="white";
+ 				}
+ 				
+ 			}
+ 		}
+ 		
+ 		for(var i=0;i<3;i++){
+ 			document.getElementById("tdcolor").rows[x].cells[y+i].style.backgroundColor="#cff09e";
+ 			document.getElementById("tdcolor").rows[x+1].cells[y+i].style.backgroundColor="#cff09e";
+ 			document.getElementById("tdcolor").rows[x+2].cells[y+i].style.backgroundColor="#cff09e";
+ 		}
+ 	}
+ 	
+
  </script>
 
 </head>
@@ -42,7 +116,7 @@ mandalArtProc.jsp
 <input type="button" value="종류별" onclick='country()'>
 </form> -->
 
-<table border=1 style="border:2px solid black;width:800px;height:800px;margin:auto;text-align:center; border-collapse:collapse;">
+<table id="tdcolor"border=1 style="border:2px solid black;width:800px;height:800px;margin:auto;text-align:center; border-collapse:collapse;">
 <colgroup>
 <col width="9%"/>
 <col width="9%"/>
@@ -66,10 +140,10 @@ mandalArtProc.jsp
 	<%}
 	for(int j=0;j<country.length;j++){
 	if(i>2 && i<6 && j>2 && j<6){%>
-		<td id="color" style="padding-top:0px; background-color:white;"><button class="button" onClick="tableColor();"><%=kinds[i][j] %></button></td>
+		<td id="color" style="padding-top:0px; background-color:#FFF0A5;"><button class="button" value="<%=kinds[i][j]%>" ><%=kinds[i][j] %></button></td>
 		<%}
 	else{%>
-		<td style="padding-top:0px;"><button class="button"><%=kinds[i][j] %></button></td>
+		<td style="padding-top:0px; background-color:white;"><button id="btn" class="button" value="<%=kinds[i][j]%>"><%=kinds[i][j] %></button></td>
 <%}%>
 
 <%}%>
@@ -78,12 +152,7 @@ mandalArtProc.jsp
 <%}%> 
 </table>
 
-<%!
-void chk(){
-	
-} %>
-
-%>
+<div id="food"></div>
 
 
 </body>
