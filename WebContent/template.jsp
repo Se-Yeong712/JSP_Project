@@ -4,10 +4,10 @@
 	request.setCharacterEncoding("UTF-8");
 	String contentPage = request.getParameter("CONTENTPAGE");
 %>
-<!-- <style>
-@font-face { font-family:'NG'; src:url('font/NanumGothic.woff') format('woff');}
-</style> -->
-<body style="margin:auto; height:100%;">
+<<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+</style>
+<body style="margin:auto; height:100%; font-family: 'Open Sans', Futura,     Helvetica, Arial, sans-serif;">
 			<table border=1 style="width: 100%;  align:center">
 				<tr>
 					<td height="80px"><jsp:include page="top.jsp" flush="false" /></td>

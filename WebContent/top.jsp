@@ -7,7 +7,7 @@
 </head>
 <body>
 <center>
-	<font style="font-size: 50px; font-weight: bold;">TITLE</font>
+	<font style="font-size: 50px; font-weight: bold; font-family: 'Open Sans', Futura,Helvetica, Arial, sans-serif;">FOOD's SEARCH &amp; SELECT</font>
 </center>
 </body>
 </html>
