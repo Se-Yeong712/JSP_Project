@@ -37,9 +37,10 @@ String country[][]={{"규동","우동","미소시루","해물파전","김치","�
  	$(document).ready(function(){
  		$('.button').on('click',(e) => {
  			console.log(e.target.value);
- 			 var div=document.getElementById("food"); 
+ 			/*  var div=document.getElementById("food"); 
+ 			 div.innerHTML=e.target.value+" "; */
  			chk=0;
- 			 div.innerHTML=e.target.value+" ";
+ 			
  			 food=e.target.value;
  			 	var foods = ['찌개','특식','밑반찬','덮/볶음밥','간식','국','야식/술안주','면'];
  				 for(var i=0;i<8;i++){
@@ -137,14 +138,14 @@ String country[][]={{"규동","우동","미소시루","해물파전","김치","�
 
 </head>
 <body>
-mandalArtProc.jsp 
+<div class="title">Food Table</div>
 
 <!-- <form>
 <input type="button" value="종류별" onclick='kind()'>
 <input type="button" value="종류별" onclick='country()'>
 </form> -->
 
-<table id="tdcolor"border=1 style="border:2px solid black;width:800px;height:800px;margin:auto;text-align:center; border-collapse:collapse;">
+<table id="tdcolor" border=1 class="table"	>
 <colgroup>
 <col width="9%"/>
 <col width="9%"/>
@@ -180,7 +181,6 @@ mandalArtProc.jsp
 <%}%> 
 </table>
 
-<div id="food"class="foodbox"></div>
 
 
 </body>

@@ -7,7 +7,9 @@
 </head>
 <body>
 <center>
-	<font style="font-size: 50px; font-weight: bold; font-family: 'Open Sans', Futura,Helvetica, Arial, sans-serif;">FOOD's SEARCH &amp; SELECT</font>
+	<font style="font-size: 50px; font-weight: bold; font-family: 'Open Sans', Futura,Helvetica, Arial, sans-serif;">
+	Food's Search &amp; Select
+	</font>
 </center>
 </body>
 </html>

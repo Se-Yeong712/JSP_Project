@@ -11,7 +11,7 @@ body {
     
 }
 
-table{
+.table{
 	 border:1px solid black;
 	 width:800px;
 	 height:800px;
@@ -26,8 +26,13 @@ table{
 	border:none;
 }
 
+.title{
+ font-weight: bold;
+ font-size: 30px;
+ margin: 10px;
+ text-align:center;
+ margin-top: 50px;
+ color:#8ed6ff;
+ }
 
-.foodbox{
-	margin: 100px;
-	color:#feb64a
-}
+

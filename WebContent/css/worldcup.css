@@ -3,3 +3,43 @@ body {
     background-color: #7F95D1;
     font-family: 'Open Sans', Futura,Helvetica, Arial, sans-serif;
 }
+
+.title{
+	margin:20px;
+	margin-top:80px;
+	font-size: 30px;
+	font-weight:bold;
+	color:black;
+}
+
+.btn{
+	margin:20px;
+	text-align:center;
+	background-color: transparent;
+	width: 200px;
+	height: 50px;
+	border: 3px solid #ff8484;
+	background-color:white;
+	color:black;
+	font-size: 15px
+}
+
+.btn:hover{
+	background-color: #ff8484;
+	
+}
+
+.chk{
+	display:inline;
+	background-color: transparent;
+	border:none;
+	font-size: 20px;
+	margin:50px;
+	margin-bottom: 100px;
+}
+
+.vs{
+	display: inline;
+	font-size: 30px;
+	font-weight: bold;
+}

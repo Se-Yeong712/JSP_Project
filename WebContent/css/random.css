@@ -28,13 +28,23 @@ body{
 	text-align:center;
 	background-color: transparent;
 	border:none;
-	width: 100px;
+	width: 150px;
 	height: 50px;
 	margin:20px;
 	border: 1px solid #FFF0A5;
+	font-size: 15px;
 }
 
 .btn:hover{
 	background-color: #FFF0A5;
 	
 }
+
+.title{
+ font-weight: bold;
+ font-size: 30px;
+ margin: 10px;
+ text-align:center;
+ margin-top: 30px;
+ color:white;
+ }

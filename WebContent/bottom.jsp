@@ -9,7 +9,7 @@
    	</style>
     </head>
     <body>
-    Copyright&copy; 2019. 이세영. All rights reserved.
+    Copyright&copy; 2019. Lee SeYeong. All rights reserved.
    	</body>
 </html>
     

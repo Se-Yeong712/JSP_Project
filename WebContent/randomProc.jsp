@@ -44,12 +44,20 @@ function myRandom(){
 	
 }
 
-
+/* $(document).ready(function() {
+	$('.button').on('click',(e) => {
+		
+		$('#test').val('원하는 값');
+		
+	});
+}); */
 
 </script>
 </head>
 <body>
-randomProc.jsp
+<div class="title">Random Select</div>
+
+
 <table id="myTable" class="table">
 <colgroup>
 	<col span=3 width="100px">
@@ -65,6 +73,7 @@ randomProc.jsp
 </table>
 <!-- <div id="ran"></div> -->
 <center>
+<!-- <button class="btn" onclick="storage();">Local Storage</button> -->
 <button class="btn" onclick="myRandom();">RANDOM</button>
 </center>
 </body>

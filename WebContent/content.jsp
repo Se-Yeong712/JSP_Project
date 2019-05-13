@@ -10,19 +10,37 @@ body{
  background-color: #0087cb;
  color: #fff0a5;
  }
+ .title{
+ font-weight: bold;
+ font-size: 30px;
+ margin: 10px;
+ margin-top: 50px;
+ }
+ 
+ .menu{
+ 	display:inline-block;
+ 	font-size: 20px;
+ 	text-align: left;
+ 	margin: 50px;;
+ }
 </style>
 </head>
 <body>
 <center>
-[홈페이지 방문을 환영합니다]
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
-[홈페이지 방문을 환영합니다]
-<br><br><br><br><br>
-<br><br><br><br><br>
-<br><br><br><br><br>
-[홈페이지 방문을 환영합니다]
+
+<div class="title">Food's Search And Select에 오신 걸 환영합니다.</div>
+<br><br>
+<div class="menu">
+<b>[SEARCH]</b><br>
+SEARCH1. 인스타그램<br>
+SEARCH2. 음식선택표<br>
+</div>
+<div class="menu">
+<b>[SELECT]</b><br>
+SELECT1. 토너먼트<br>
+SELECT2. 랜덤<br>
+</div>
+<div style="margin-bottom: 200px;"></div>
 </center>
 </body>
 </html>
