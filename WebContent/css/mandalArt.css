@@ -25,10 +25,8 @@ table{
 	border:none;
 }
 
-.tr{
-	
-}
 
-col.colgr{
-	border-right:2px solid black;
+.foodbox{
+	margin: 100px;
+	
 }

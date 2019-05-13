@@ -29,26 +29,53 @@ String country[][]={{"규동","우동","미소시루","해물파전","김치","�
 <link rel="stylesheet" href="css/mandalArt.css">
 <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
  <script>
- 
+ var index=0;
+ var foodlist=new Array(9);
+ var food="";
+ var chk=0;
+
  	$(document).ready(function(){
  		$('.button').on('click',(e) => {
  			console.log(e.target.value);
  			 var div=document.getElementById("food"); 
+ 			chk=0;
  			 div.innerHTML=e.target.value+" ";
- 			 var food=e.target.value;
- 			 var foods = ['찌개','특식','밑반찬','덮/볶음밥','간식','국','야식/술안주','면'];
- 			 for(var i=0;i<8;i++){
- 				 if(food==foods[i]){
- 					console.log(e.target.value+"확인");
- 					tdsel(i);
- 					
+ 			 food=e.target.value;
+ 			 	var foods = ['찌개','특식','밑반찬','덮/볶음밥','간식','국','야식/술안주','면'];
+ 				 for(var i=0;i<8;i++){
+ 					 if(food==foods[i]){
+ 						/* console.log(e.target.value+"확인"); */
+ 						tdsel(i);
+ 						break;
+ 					 }
+ 					 else if(food!="찌개" && food!="특식" && food!="밑반찬" && food!="덮/볶음밥" && food!="간식" && food!="국" && food!="야식/술안주" && food!="면" && food!="종류별"){
+ 						 setItems();
+ 						chk=1;
+ 					 }
+ 					 
  				 }
- 			 }
- 			 
+			if(chk==1){
+				index++;
+			}
  		});
- 	 
-
  	});
+ 	
+ 	function setItems(){
+ 		if(index<9){
+				foodlist[index]=food;
+				localStorage.setItem("food",JSON.stringify(foodlist));
+			}
+			else{
+				alert("더이상 저장할 수 없습니다.");
+			}
+ 		
+ 		
+ 	}	
+ 	
+ 	function deleteItems() {
+ 		  localStorage.clear();
+ 		}
+
 
  	function tdsel(i){
  		switch (i) {
@@ -152,7 +179,7 @@ mandalArtProc.jsp
 <%}%> 
 </table>
 
-<div id="food"></div>
+<div id="food"class="foodbox"></div>
 
 
 </body>
