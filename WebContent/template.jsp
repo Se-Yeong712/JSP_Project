@@ -5,6 +5,7 @@
 	String contentPage = request.getParameter("CONTENTPAGE");
 %>
 <head>
+<title>Food's Search And Select</title>
 <style>
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 </style>
